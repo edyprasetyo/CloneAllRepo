@@ -4,7 +4,7 @@ import os
 import requests
 
 username = "edyprasetyo"
-access_token = "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"
+access_token = "your"
 
 clone_path = "/home/edy/Documents/MyProject/"
 clone_url = f"https://{username}:{access_token}@github.com/{username}"
@@ -26,7 +26,7 @@ def cloneRepo(repositories):
 
 
 headers = {
-    'Authorization': f'Token {access_token}'
+    'Authorization': f'token {access_token}'
 }
 
 # Get public repositories
