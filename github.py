@@ -9,12 +9,8 @@ access_token = "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"
 clone_path = "/home/edy/Documents/MyProject/"
 clone_url = f"https://{username}:{access_token}@github.com/{username}"
 
-headers = {
-    'Authorization': f'Token {access_token}'
-}
-
 def cloneRepo(repositories):
-    
+    print(repositories)
     for repo in repositories:     
         repo_path = os.path.join(clone_path, repo["name"])
         clone_repo_url = f"{clone_url}/{repo['name']}.git"
@@ -28,6 +24,10 @@ def cloneRepo(repositories):
         os.system(git_command)
 
 
+
+headers = {
+    'Authorization': f'Token {access_token}'
+}
 
 # Get public repositories
 public_repo_url = f'https://api.github.com/users/{username}/repos'
