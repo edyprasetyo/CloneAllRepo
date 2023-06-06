@@ -4,7 +4,7 @@ import os
 import requests
 
 username = "edyprasetyo"
-access_token = "your"
+access_token = "your_access_token"
 
 clone_path = "/home/edy/Documents/MyProject/"
 clone_url = f"https://{username}:{access_token}@github.com/{username}"
