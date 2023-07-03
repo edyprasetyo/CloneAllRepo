@@ -2,7 +2,7 @@ import os
 
 import requests
 
-username = 'your_username'
+username = 'csmcorporatama'
 api_token = 'your_api_token'
 
 clone_folder = "/home/edy/Documents/GitProject/"
